@@ -1,6 +1,6 @@
 # Intelectia Consultoria — site
 
-Site institucional da **Intelectia Consultoria**, consultoria em inteligência artificial para pequenas e médias empresas de João Monlevade e do Vale do Aço (MG). Fundador: Jean Cecílio.
+Site institucional da **Intelectia Consultoria**, empresa de engenharia e arquitetura de inteligência artificial para pequenas e médias empresas de João Monlevade e do Vale do Aço (MG). Fundador: Jean Cecílio.
 
 Objetivo do site: gerar pedidos de **diagnóstico gratuito** (conversão principal = contato pelo WhatsApp).
 
