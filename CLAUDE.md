@@ -40,6 +40,9 @@ Regras:
 10. [08] CTA final laranja
 11. Footer
 
+## Outras páginas
+- `privacidade.html` — Política de privacidade (LGPD), linkada no rodapé das duas páginas. Mesmo header/rodapé do `index.html` (sem o link Resultados). Ao mudar o tratamento de dados (ex.: analytics), atualizar o texto e a data no topo.
+
 ## Assets
 - `assets/logo-horizontal-claro.png` — logo para fundo claro (usado no header)
 - `assets/logo-horizontal-escuro.png` — logo para fundo escuro
@@ -48,6 +51,7 @@ Regras:
 
 ## Placeholders que precisam de dados reais (não inventar)
 - `[SEU WHATSAPP]`, `[SEU E-MAIL]`, `[SEU CNPJ]` (aparecem também no JSON-LD do `<head>`: o telefone ali é no formato `+55-31-9XXXX-XXXX`)
+- `[HOSPEDAGEM]` em `privacidade.html`: nome do serviço onde o site for publicado.
 - `[SEU-DOMINIO]`: canonical, Open Graph, JSON-LD, `sitemap.xml` e `robots.txt`. Trocar tudo de uma vez quando o domínio estiver definido.
 - `[SUA FOTO]` na seção do fundador
 - Os 3 cases em [05] Resultados (nome do cliente, setor, número, descrição). **Nunca inventar clientes ou números.** A seção está **escondida** pela classe `sem-resultados` no `<body>` (some a seção e o link do menu). Para reativar, apague essa classe.

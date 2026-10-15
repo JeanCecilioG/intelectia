@@ -174,6 +174,27 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outlin
 /* ---------- Footer ---------- */
 .site-footer__inner { padding-top: 28px; padding-bottom: 28px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-family: var(--font-mono); font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); }
 
+.site-footer__inner a { color: var(--text-2); text-underline-offset: 3px; }
+
+/* ---------- Página de política de privacidade ---------- */
+.legal { padding-top: 96px; padding-bottom: 120px; }
+.legal__head { display: flex; flex-direction: column; gap: 20px; margin-bottom: 56px; }
+.legal__title { margin: 0; font-family: var(--font-display); font-stretch: 125%; font-weight: 900; font-size: clamp(36px, 6vw, 80px); line-height: 0.95; letter-spacing: -2px; text-transform: uppercase; }
+.legal__meta { margin: 0; font-family: var(--font-mono); font-size: 13px; letter-spacing: 1px; color: var(--muted); }
+.legal__body { max-width: 760px; }
+.legal__intro { margin: 0 0 40px; font-size: 20px; line-height: 1.55; color: var(--text-2); }
+.legal__sec { padding: 32px 0; border-top: 1px solid var(--line); }
+.legal__sec:last-of-type { border-bottom: 1px solid var(--line); }
+.legal__h { margin: 0 0 16px; display: flex; align-items: baseline; gap: 16px; font-family: var(--font-display); font-stretch: 112%; font-weight: 800; font-size: 26px; line-height: 1.15; }
+.legal__n { flex: none; font-family: var(--font-mono); font-size: 15px; font-weight: 400; font-stretch: normal; color: var(--accent-text); }
+.legal__sec p, .legal__sec li { font-size: 17px; line-height: 1.65; color: var(--text-2); }
+.legal__sec p { margin: 0 0 12px; }
+.legal__sec p:last-child { margin-bottom: 0; }
+.legal__sec ul { margin: 0 0 12px; padding-left: 20px; }
+.legal__sec li + li { margin-top: 6px; }
+.legal__sec strong { color: var(--ink); font-weight: 600; }
+.legal__back { margin: 40px 0 0; font-family: var(--font-mono); font-size: 14px; letter-spacing: 1px; text-transform: uppercase; }
+
 /* ---------- Botão flutuante de WhatsApp (só no celular) ---------- */
 .wa-float { display: none; }
 @media (max-width: 767px) {
@@ -242,4 +263,10 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outlin
   .cta__title { font-size: clamp(30px, 9.4vw, 57px); letter-spacing: -1px; }
   .btn--light { padding: 20px 24px; font-size: 17px; }
   .cta__row { align-items: stretch; flex-direction: column; }
+
+  .legal { padding-top: 56px; padding-bottom: 72px; }
+  .legal__head { margin-bottom: 40px; }
+  .legal__title { font-size: clamp(30px, 9.6vw, 56px); letter-spacing: -1px; }
+  .legal__intro { font-size: 18px; }
+  .legal__h { font-size: 22px; gap: 12px; }
 }
