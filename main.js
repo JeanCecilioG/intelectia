@@ -3,7 +3,7 @@
 // Formato: 55 + DDD + número, só dígitos. Ex.: 5531912345678
 // Enquanto estiver vazio, os botões levam para a seção #contato.
 // ============================================================
-var WHATSAPP_NUMERO = '';
+var WHATSAPP_NUMERO = '5531973111135';
 var WHATSAPP_MENSAGEM = 'Olá! Quero meu diagnóstico gratuito';
 
 // Botões de contato ([data-whatsapp]) viram link do WhatsApp com a mensagem pronta,
