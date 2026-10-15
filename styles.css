@@ -162,6 +162,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outlin
 .cta__title { margin: 0; font-family: var(--font-display); font-stretch: 125%; font-weight: 900; font-size: clamp(44px, 7.5vw, 104px); line-height: 0.92; letter-spacing: -2px; text-transform: uppercase; max-width: 1100px; }
 .cta__row { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 32px; }
 .cta__contacts { font-family: var(--font-mono); font-size: 15px; }
+.cta__contacts a { color: inherit; }
 
 /* ---------- Footer ---------- */
 .site-footer__inner { padding-top: 28px; padding-bottom: 28px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-family: var(--font-mono); font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); }

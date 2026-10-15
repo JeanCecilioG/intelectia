@@ -50,7 +50,7 @@ Regras:
 - `[SEU WHATSAPP]`, `[SEU E-MAIL]`, `[SEU CNPJ]`
 - `[SUA FOTO]` na seção do fundador
 - Os 3 cases em [05] Resultados (nome do cliente, setor, número, descrição). **Nunca inventar clientes ou números.** Enquanto não houver cases reais, esconder a seção.
-- Todos os links `href="#contato"` dos botões devem virar link do WhatsApp: `https://wa.me/55DDDNUMERO?text=Olá!%20Quero%20meu%20diagnóstico%20gratuito`
+- WhatsApp: o número fica **só** em `WHATSAPP_NUMERO`, no topo do `main.js` (formato `5531912345678`). Os botões marcados com `data-whatsapp` viram `https://wa.me/<número>?text=Olá! Quero meu diagnóstico gratuito`; enquanto a constante estiver vazia, eles levam para `#contato`.
 
 ## Backlog
 1. Refatorar estilos inline para classes em `styles.css` sem mudar o visual.
