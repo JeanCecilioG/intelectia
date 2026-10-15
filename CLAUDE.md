@@ -29,16 +29,17 @@ Regras:
 
 ## Estrutura da página (`index.html`)
 1. Header — logo + navegação + botão "Diagnóstico grátis"
-2. [01] Hero — "IA forjada para a sua empresa." + painel de automações (exemplo ilustrativo)
+2. [01] Hero — "IA forjada para a sua empresa.", texto, botões (WhatsApp e "Como funciona o diagnóstico") e linhas de fundo
 3. Faixa de setores atendidos
 4. [02] IA de verdade — 5 pontos técnicos do que dá para construir (abaixo de "Ter o ChatGPT aberto…")
 5. [03] Serviços (seção escura) — S1 a S6
 6. [04] Método — 4 etapas
-7. [05] Resultados — 3 cards de cases (PLACEHOLDERS)
-8. [06] Quem está por trás — fundador
-9. [07] Perguntas frequentes
-10. [08] CTA final laranja
-11. Footer
+7. Diagnóstico gratuito — o que o cliente recebe (D1–D4), com botão de WhatsApp
+8. [05] Resultados — 3 cards de cases (PLACEHOLDERS)
+9. [06] Quem está por trás — fundador
+10. [07] Perguntas frequentes
+11. [08] CTA final laranja
+12. Footer
 
 ## Assets
 - `assets/logo-horizontal-claro.png` — logo para fundo claro (usado no header)

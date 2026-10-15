@@ -67,7 +67,7 @@ var WHATSAPP_MENSAGEM = 'Olá! Quero meu diagnóstico gratuito';
   var flutuante = document.querySelector('.wa-float');
   var menu = document.getElementById('menu');
   if (!flutuante || !('IntersectionObserver' in window)) return;
-  var alvos = [document.querySelector('.hero .btn--primary'), document.getElementById('contato'), document.querySelector('footer')].filter(Boolean);
+  var alvos = [document.querySelector('.hero .btn--primary'), document.querySelector('.diag .btn--primary'), document.getElementById('contato'), document.querySelector('footer')].filter(Boolean);
   var visiveis = new Set();
 
   function atualizar() {

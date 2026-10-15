@@ -127,6 +127,18 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outlin
 .step__title { margin: 0; font-family: var(--font-display); font-stretch: 112%; font-weight: 800; font-size: 26px; }
 .step__text { margin: 0; font-size: 16px; line-height: 1.55; color: var(--text-2); }
 
+/* ---------- Diagnóstico gratuito ---------- */
+.diag-wrap { border-top: 1px solid var(--line); }
+.diag { display: flex; flex-wrap: wrap; gap: 32px 56px; }
+.diag__head { flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 24px; }
+.diag__intro { margin: 0; font-size: 18px; line-height: 1.55; color: var(--text-2); max-width: 460px; }
+.diag__body { flex: 2 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 24px; }
+.diag__list { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
+.diag__item { display: flex; gap: 12px 40px; padding: 28px 0; border-bottom: 1px solid var(--line); }
+.diag__num { flex: none; width: 48px; font-family: var(--font-mono); font-size: 15px; color: var(--accent-text); padding-top: 4px; }
+.diag__text { margin: 0; font-size: 21px; line-height: 1.45; }
+.diag__note { margin: 0; font-family: var(--font-mono); font-size: 13px; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); }
+
 /* ---------- [05] Resultados ---------- */
 .results { border-top: 1px solid var(--line); }
 /* 3 colunas só quando o número grande cabe; antes disso, um card por linha (sem buraco no grid). */
@@ -230,6 +242,10 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outlin
   .about__media { flex-basis: 240px; }
 
   .faq { gap: 40px; }
+  .diag__item { gap: 16px; padding: 22px 0; }
+  .diag__num { width: 32px; }
+  .diag__text { font-size: 18px; }
+  .diag__head .btn { align-self: stretch; }
   .faq__q { font-size: 19px; }
 
   .cta__title { font-size: clamp(30px, 9.4vw, 57px); letter-spacing: -1px; }
