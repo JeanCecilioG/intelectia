@@ -7,7 +7,7 @@ Objetivo do site: gerar pedidos de **diagnóstico gratuito** (conversão princip
 ## Stack atual
 - HTML + CSS estáticos, sem build. Abrir `index.html` no navegador já funciona.
 - Fontes: Google Fonts — Archivo (títulos, `font-stretch: 112–125%`, peso 800–900, caixa alta), IBM Plex Sans (texto), IBM Plex Mono (rótulos e números).
-- O HTML veio de um protótipo e está com **estilos inline**. Refatorar para classes em `styles.css` é a primeira tarefa.
+- Estilos em `styles.css` (tokens de cor e fonte em `:root`, classes por seção). Não usar `style=""` inline no HTML.
 
 ## Identidade visual
 | Token | Cor | Uso |

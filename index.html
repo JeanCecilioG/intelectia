@@ -15,22 +15,22 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div style="font-family: 'IBM Plex Sans', system-ui, sans-serif; color: #111214; background: #F1EDE5; width: 100%; overflow: hidden">
+<div class="page">
 
-<header style="border-bottom: 1px solid #D6D0C4">
-<div style="max-width: 1280px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
-<a href="#topo" style="display: flex; align-items: center; text-decoration: none"><img src="assets/logo-horizontal-claro.png" alt="Intelectia Consultoria" style="height: 40px; width: auto; display: block"></a>
-<nav aria-label="Principal" style="display: flex; flex-wrap: wrap; align-items: center; gap: 28px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 1px; text-transform: uppercase">
-<a href="#servicos" style="color: #3D4142; text-decoration: none">Serviços</a>
-<a href="#metodo" style="color: #3D4142; text-decoration: none">Método</a>
-<a href="#resultados" style="color: #3D4142; text-decoration: none">Resultados</a>
-<a href="#contato" style="background: var(--accent); color: #111214; text-decoration: none; padding: 13px 20px; font-weight: 600; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Diagnóstico grátis →</a>
+<header class="site-header">
+<div class="container site-header__inner">
+<a href="#topo" class="brand"><img src="assets/logo-horizontal-claro.png" alt="Intelectia Consultoria" class="brand__logo"></a>
+<nav aria-label="Principal" class="site-nav">
+<a href="#servicos" class="site-nav__link">Serviços</a>
+<a href="#metodo" class="site-nav__link">Método</a>
+<a href="#resultados" class="site-nav__link">Resultados</a>
+<a href="#contato" class="btn btn--nav">Diagnóstico grátis →</a>
 </nav>
 </div>
 </header>
 
-<section id="topo" style="position: relative; border-bottom: 1px solid #D6D0C4">
-<svg viewBox="0 0 1440 760" preserveAspectRatio="xMidYMid slice" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0.55">
+<section id="topo" class="hero">
+<svg viewBox="0 0 1440 760" preserveAspectRatio="xMidYMid slice" aria-hidden="true" class="hero__bg">
 <path d="M0 620 H380 L460 540 H820 L900 460 H1440" fill="none" stroke="#D6D0C4" stroke-width="1.5"/>
 <path d="M0 680 H520 L600 600 H1100 L1180 520 H1440" fill="none" stroke="#D6D0C4" stroke-width="1.5"/>
 <path d="M980 0 V200 L1060 280 V760" fill="none" stroke="#D6D0C4" stroke-width="1.5"/>
@@ -40,182 +40,182 @@
 <circle cx="460" cy="540" r="5" fill="none" stroke="#8E887C" stroke-width="1.5"/>
 <circle cx="1180" cy="520" r="5" fill="none" stroke="#8E887C" stroke-width="1.5"/>
 </svg>
-<div style="position: relative; max-width: 1280px; margin: 0 auto; padding: 96px 24px 104px; display: flex; flex-wrap: wrap; align-items: flex-end; gap: 56px">
-<div style="flex: 1 1 640px; min-width: 0; display: flex; flex-direction: column; gap: 32px">
-<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: #55595A">[01] Consultoria em inteligência artificial · Vale do Aço · MG</p>
-<h1 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 125%; font-weight: 900; font-size: clamp(48px, 8vw, 112px); line-height: 0.92; letter-spacing: -2px; text-transform: uppercase">IA forjada para a <span style="color: var(--accent)">sua empresa.</span></h1>
-<p style="margin: 0; font-size: 20px; line-height: 1.55; color: #3D4142; max-width: 580px">A gente entra na rotina do seu negócio, encontra o trabalho repetitivo e coloca a inteligência artificial para fazer. Atendimento, orçamentos, relatórios, dados — funcionando de verdade, não em apresentação.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 12px">
-<a href="#contato" style="background: var(--accent); color: #111214; text-decoration: none; padding: 18px 28px; font-weight: 700; font-size: 17px">Quero meu diagnóstico gratuito</a>
-<a href="#servicos" style="color: #111214; text-decoration: none; padding: 18px 28px; font-weight: 600; font-size: 17px; border: 1px solid #8E887C">Ver o que fazemos</a>
+<div class="container hero__inner">
+<div class="hero__text">
+<p class="label">[01] Consultoria em inteligência artificial · Vale do Aço · MG</p>
+<h1 class="hero__title">IA forjada para a <span class="hl">sua empresa.</span></h1>
+<p class="hero__lead">A gente entra na rotina do seu negócio, encontra o trabalho repetitivo e coloca a inteligência artificial para fazer. Atendimento, orçamentos, relatórios, dados — funcionando de verdade, não em apresentação.</p>
+<div class="btn-row">
+<a href="#contato" class="btn btn--primary">Quero meu diagnóstico gratuito</a>
+<a href="#servicos" class="btn btn--outline">Ver o que fazemos</a>
 </div>
 </div>
-<div style="flex: 1 1 380px; min-width: 0; max-width: 460px; background: #E8E2D6; border: 1px solid #D6D0C4; font-family: 'IBM Plex Mono', monospace">
-<div style="display: flex; justify-content: space-between; align-items: center; padding: 14px 18px; border-bottom: 1px solid #D6D0C4; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: #55595A">
+<div class="panel">
+<div class="panel__head">
 <span>Painel de automações</span>
-<span style="display: flex; align-items: center; gap: 8px; color: #111214"><span style="width: 8px; height: 8px; border-radius: 50%; background: var(--accent)"></span>Ao vivo</span>
+<span class="panel__live"><span class="panel__dot"></span>Ao vivo</span>
 </div>
-<div style="padding: 18px; display: flex; flex-direction: column; gap: 14px; font-size: 14px; line-height: 1.45">
-<div style="display: flex; gap: 14px"><span style="color: #55595A">08:02</span><span>Pedido recebido pelo WhatsApp e lançado no sistema</span></div>
-<div style="display: flex; gap: 14px"><span style="color: #55595A">08:04</span><span>Orçamento gerado e enviado ao cliente</span></div>
-<div style="display: flex; gap: 14px"><span style="color: #55595A">08:11</span><span>Dúvida sobre entrega respondida em 9 s</span></div>
-<div style="display: flex; gap: 14px"><span style="color: #55595A">08:30</span><span style="color: #B5420A">Relatório de vendas do dia anterior pronto</span></div>
+<div class="panel__body">
+<div class="panel__row"><span class="panel__time">08:02</span><span>Pedido recebido pelo WhatsApp e lançado no sistema</span></div>
+<div class="panel__row"><span class="panel__time">08:04</span><span>Orçamento gerado e enviado ao cliente</span></div>
+<div class="panel__row"><span class="panel__time">08:11</span><span>Dúvida sobre entrega respondida em 9 s</span></div>
+<div class="panel__row"><span class="panel__time">08:30</span><span class="panel__highlight">Relatório de vendas do dia anterior pronto</span></div>
 </div>
-<p style="margin: 0; padding: 12px 18px; border-top: 1px solid #D6D0C4; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: #55595A">Exemplo ilustrativo</p>
+<p class="panel__foot">Exemplo ilustrativo</p>
 </div>
 </div>
 </section>
 
-<section aria-label="Setores atendidos" style="border-bottom: 1px solid #D6D0C4">
-<div style="max-width: 1280px; margin: 0 auto; padding: 22px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px 28px; font-family: 'IBM Plex Mono', monospace; font-size: 14px; letter-spacing: 1.5px; text-transform: uppercase; color: #3D4142">
-<span style="color: #55595A">Atendemos →</span>
-<span>Comércio</span><span style="color: var(--accent)">/</span>
-<span>Indústria</span><span style="color: var(--accent)">/</span>
-<span>Saúde</span><span style="color: var(--accent)">/</span>
-<span>Construção</span><span style="color: var(--accent)">/</span>
-<span>Serviços</span><span style="color: var(--accent)">/</span>
+<section aria-label="Setores atendidos" class="sectors">
+<div class="container sectors__inner">
+<span class="sectors__lead">Atendemos →</span>
+<span>Comércio</span><span class="hl">/</span>
+<span>Indústria</span><span class="hl">/</span>
+<span>Saúde</span><span class="hl">/</span>
+<span>Construção</span><span class="hl">/</span>
+<span>Serviços</span><span class="hl">/</span>
 <span>Educação</span>
 </div>
 </section>
 
-<section aria-label="O problema" style="max-width: 1280px; margin: 0 auto; padding: 120px 24px; display: flex; flex-direction: column; gap: 56px">
-<div style="display: flex; flex-direction: column; gap: 20px">
-<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: #55595A">[02] O problema</p>
-<h2 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 112%; font-weight: 800; font-size: clamp(36px, 5vw, 68px); line-height: 1; letter-spacing: -1px; max-width: 1000px">Ter o ChatGPT aberto no computador <span style="color: #8E887C">não é</span> ter IA na empresa.</h2>
+<section aria-label="O problema" class="container section stack">
+<div class="section-head">
+<p class="label">[02] O problema</p>
+<h2 class="h2 h2--wide">Ter o ChatGPT aberto no computador <span class="h2__dim">não é</span> ter IA na empresa.</h2>
 </div>
-<div style="display: flex; flex-direction: column; border-top: 1px solid #D6D0C4">
-<div style="display: flex; flex-wrap: wrap; gap: 12px 40px; padding: 28px 0; border-bottom: 1px solid #D6D0C4"><span style="font-family: 'IBM Plex Mono', monospace; color: #B5420A; font-size: 15px; width: 48px">01</span><p style="margin: 0; flex: 1 1 400px; font-size: 22px; line-height: 1.4">Alguém da equipe passa o dia respondendo as mesmas perguntas no WhatsApp.</p></div>
-<div style="display: flex; flex-wrap: wrap; gap: 12px 40px; padding: 28px 0; border-bottom: 1px solid #D6D0C4"><span style="font-family: 'IBM Plex Mono', monospace; color: #B5420A; font-size: 15px; width: 48px">02</span><p style="margin: 0; flex: 1 1 400px; font-size: 22px; line-height: 1.4">Orçamentos, planilhas e relatórios ainda saem na mão, um por um.</p></div>
-<div style="display: flex; flex-wrap: wrap; gap: 12px 40px; padding: 28px 0; border-bottom: 1px solid #D6D0C4"><span style="font-family: 'IBM Plex Mono', monospace; color: #B5420A; font-size: 15px; width: 48px">03</span><p style="margin: 0; flex: 1 1 400px; font-size: 22px; line-height: 1.4">A equipe testou ferramentas de IA, mas nada virou rotina.</p></div>
-<div style="display: flex; flex-wrap: wrap; gap: 12px 40px; padding: 28px 0; border-bottom: 1px solid #D6D0C4"><span style="font-family: 'IBM Plex Mono', monospace; color: #B5420A; font-size: 15px; width: 48px">04</span><p style="margin: 0; flex: 1 1 400px; font-size: 22px; line-height: 1.4">As decisões saem no feeling, porque os números estão espalhados.</p></div>
-</div>
-</section>
-
-<section id="servicos" style="background: #111214; color: #F1EDE5">
-<div style="max-width: 1280px; margin: 0 auto; padding: 120px 24px; display: flex; flex-direction: column; gap: 56px">
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
-<div style="display: flex; flex-direction: column; gap: 20px">
-<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: #A3A6A4">[03] Serviços</p>
-<h2 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 112%; font-weight: 800; font-size: clamp(36px, 5vw, 68px); line-height: 1; letter-spacing: -1px">O que colocamos para rodar.</h2>
-</div>
-<p style="margin: 0; font-size: 18px; line-height: 1.55; color: #C9C6C0; max-width: 420px">Cada projeto começa pelo problema do seu negócio — a ferramenta vem depois.</p>
-</div>
-<div style="display: flex; flex-direction: column; border-top: 2px solid #F1EDE5">
-<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px 40px; padding: 32px 0; border-bottom: 1px solid #3D4142"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 15px; width: 48px; color: #A3A6A4">S1</span><h3 style="margin: 0; flex: 0 1 380px; font-family: 'Archivo', sans-serif; font-stretch: 112%; font-weight: 800; font-size: 30px; line-height: 1.1">Atendimento com IA</h3><p style="margin: 0; flex: 1 1 360px; font-size: 18px; line-height: 1.55; color: #C9C6C0">Assistentes no WhatsApp e no Instagram que respondem clientes 24h, tiram dúvidas, anotam pedidos e passam para um humano quando precisa.</p></div>
-<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px 40px; padding: 32px 0; border-bottom: 1px solid #3D4142"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 15px; width: 48px; color: #A3A6A4">S2</span><h3 style="margin: 0; flex: 0 1 380px; font-family: 'Archivo', sans-serif; font-stretch: 112%; font-weight: 800; font-size: 30px; line-height: 1.1">Automação de processos</h3><p style="margin: 0; flex: 1 1 360px; font-size: 18px; line-height: 1.55; color: #C9C6C0">Orçamentos, cadastros, e-mails e relatórios feitos sozinhos, conectando os sistemas que você já usa.</p></div>
-<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px 40px; padding: 32px 0; border-bottom: 1px solid #3D4142"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 15px; width: 48px; color: #A3A6A4">S3</span><h3 style="margin: 0; flex: 0 1 380px; font-family: 'Archivo', sans-serif; font-stretch: 112%; font-weight: 800; font-size: 30px; line-height: 1.1">Dados e painéis</h3><p style="margin: 0; flex: 1 1 360px; font-size: 18px; line-height: 1.55; color: #C9C6C0">Vendas, estoque e atendimento reunidos num painel simples, atualizado automaticamente.</p></div>
-<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px 40px; padding: 32px 0; border-bottom: 1px solid #3D4142"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 15px; width: 48px; color: #A3A6A4">S4</span><h3 style="margin: 0; flex: 0 1 380px; font-family: 'Archivo', sans-serif; font-stretch: 112%; font-weight: 800; font-size: 30px; line-height: 1.1">Treinamento de equipes</h3><p style="margin: 0; flex: 1 1 360px; font-size: 18px; line-height: 1.55; color: #C9C6C0">Workshops práticos para sua equipe usar IA no dia a dia, com exemplos do próprio trabalho dela.</p></div>
-<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px 40px; padding: 32px 0; border-bottom: 1px solid #3D4142"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 15px; width: 48px; color: #A3A6A4">S5</span><h3 style="margin: 0; flex: 0 1 380px; font-family: 'Archivo', sans-serif; font-stretch: 112%; font-weight: 800; font-size: 30px; line-height: 1.1">Segurança e LGPD</h3><p style="margin: 0; flex: 1 1 360px; font-size: 18px; line-height: 1.55; color: #C9C6C0">Toda implantação protege os dados da empresa e dos clientes. IA rápida, mas sem vazar nada.</p></div>
-</div>
+<div class="rows">
+<div class="pain"><span class="pain__num">01</span><p class="pain__text">Alguém da equipe passa o dia respondendo as mesmas perguntas no WhatsApp.</p></div>
+<div class="pain"><span class="pain__num">02</span><p class="pain__text">Orçamentos, planilhas e relatórios ainda saem na mão, um por um.</p></div>
+<div class="pain"><span class="pain__num">03</span><p class="pain__text">A equipe testou ferramentas de IA, mas nada virou rotina.</p></div>
+<div class="pain"><span class="pain__num">04</span><p class="pain__text">As decisões saem no feeling, porque os números estão espalhados.</p></div>
 </div>
 </section>
 
-<section id="metodo" style="max-width: 1280px; margin: 0 auto; padding: 120px 24px; display: flex; flex-direction: column; gap: 64px">
-<div style="display: flex; flex-direction: column; gap: 20px">
-<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: #55595A">[04] Método</p>
-<h2 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 112%; font-weight: 800; font-size: clamp(36px, 5vw, 68px); line-height: 1; letter-spacing: -1px">Do primeiro café ao resultado medido.</h2>
+<section id="servicos" class="section-dark">
+<div class="container section stack">
+<div class="services__head">
+<div class="section-head">
+<p class="label label--on-dark">[03] Serviços</p>
+<h2 class="h2">O que colocamos para rodar.</h2>
 </div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); border-top: 1px solid #D6D0C4">
-<div style="padding: 36px 28px 36px 0; display: flex; flex-direction: column; gap: 16px; border-right: 1px solid #D6D0C4">
-<span style="width: 14px; height: 14px; border-radius: 50%; background: var(--accent); margin-top: -43px"></span>
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 1.5px; color: #55595A">ETAPA 01 · SEM CUSTO</span>
-<h3 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 112%; font-weight: 800; font-size: 26px">Conversa</h3>
-<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #3D4142">Visitamos sua empresa (ou fazemos online) e entendemos onde o tempo está sendo perdido.</p>
+<p class="services__intro">Cada projeto começa pelo problema do seu negócio — a ferramenta vem depois.</p>
 </div>
-<div style="padding: 36px 28px; display: flex; flex-direction: column; gap: 16px; border-right: 1px solid #D6D0C4">
-<span style="width: 14px; height: 14px; border-radius: 50%; border: 2px solid #111214; box-sizing: border-box; margin-top: -43px"></span>
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 1.5px; color: #55595A">ETAPA 02</span>
-<h3 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 112%; font-weight: 800; font-size: 26px">Diagnóstico</h3>
-<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #3D4142">Você recebe um mapa do que automatizar primeiro, com custo, prazo e retorno esperado.</p>
-</div>
-<div style="padding: 36px 28px; display: flex; flex-direction: column; gap: 16px; border-right: 1px solid #D6D0C4">
-<span style="width: 14px; height: 14px; border-radius: 50%; border: 2px solid #111214; box-sizing: border-box; margin-top: -43px"></span>
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 1.5px; color: #55595A">ETAPA 03</span>
-<h3 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 112%; font-weight: 800; font-size: 26px">Implantação</h3>
-<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #3D4142">Construímos, testamos com a sua equipe e só entregamos quando está rodando.</p>
-</div>
-<div style="padding: 36px 28px; display: flex; flex-direction: column; gap: 16px">
-<span style="width: 14px; height: 14px; border-radius: 50%; border: 2px solid #111214; box-sizing: border-box; margin-top: -43px"></span>
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 1.5px; color: #55595A">ETAPA 04</span>
-<h3 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 112%; font-weight: 800; font-size: 26px">Evolução</h3>
-<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #3D4142">Medimos horas economizadas e vendas a mais, e ajustamos mês a mês.</p>
+<div class="services__list">
+<div class="service"><span class="service__code">S1</span><h3 class="service__title">Atendimento com IA</h3><p class="service__text">Assistentes no WhatsApp e no Instagram que respondem clientes 24h, tiram dúvidas, anotam pedidos e passam para um humano quando precisa.</p></div>
+<div class="service"><span class="service__code">S2</span><h3 class="service__title">Automação de processos</h3><p class="service__text">Orçamentos, cadastros, e-mails e relatórios feitos sozinhos, conectando os sistemas que você já usa.</p></div>
+<div class="service"><span class="service__code">S3</span><h3 class="service__title">Dados e painéis</h3><p class="service__text">Vendas, estoque e atendimento reunidos num painel simples, atualizado automaticamente.</p></div>
+<div class="service"><span class="service__code">S4</span><h3 class="service__title">Treinamento de equipes</h3><p class="service__text">Workshops práticos para sua equipe usar IA no dia a dia, com exemplos do próprio trabalho dela.</p></div>
+<div class="service"><span class="service__code">S5</span><h3 class="service__title">Segurança e LGPD</h3><p class="service__text">Toda implantação protege os dados da empresa e dos clientes. IA rápida, mas sem vazar nada.</p></div>
 </div>
 </div>
 </section>
 
-<section id="resultados" style="border-top: 1px solid #D6D0C4">
-<div style="max-width: 1280px; margin: 0 auto; padding: 120px 24px; display: flex; flex-direction: column; gap: 56px">
-<div style="display: flex; flex-direction: column; gap: 20px">
-<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: #55595A">[05] Resultados</p>
-<h2 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 112%; font-weight: 800; font-size: clamp(36px, 5vw, 68px); line-height: 1; letter-spacing: -1px">Antes e depois, em números.</h2>
+<section id="metodo" class="container section stack stack--64">
+<div class="section-head">
+<p class="label">[04] Método</p>
+<h2 class="h2">Do primeiro café ao resultado medido.</h2>
 </div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1px; background: #D6D0C4; border: 1px solid #D6D0C4">
-<div style="background: #F1EDE5; padding: 36px; display: flex; flex-direction: column; gap: 20px">
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 1.5px; color: #55595A">CASE 01 · [SETOR]</span>
-<span style="font-family: 'Archivo', sans-serif; font-stretch: 125%; font-weight: 900; font-size: 64px; line-height: 1; color: var(--accent)">[−00h]</span>
-<span style="font-size: 15px; color: #55595A">[por semana de trabalho manual]</span>
-<p style="margin: 0; font-size: 17px; line-height: 1.55; color: #3D4142">[Nome do cliente] — [o problema, o que foi implantado e o resultado.]</p>
+<div class="steps">
+<div class="step">
+<span class="step__dot step__dot--active"></span>
+<span class="step__tag">ETAPA 01 · SEM CUSTO</span>
+<h3 class="step__title">Conversa</h3>
+<p class="step__text">Visitamos sua empresa (ou fazemos online) e entendemos onde o tempo está sendo perdido.</p>
 </div>
-<div style="background: #F1EDE5; padding: 36px; display: flex; flex-direction: column; gap: 20px">
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 1.5px; color: #55595A">CASE 02 · [SETOR]</span>
-<span style="font-family: 'Archivo', sans-serif; font-stretch: 125%; font-weight: 900; font-size: 64px; line-height: 1; color: var(--accent)">[+00%]</span>
-<span style="font-size: 15px; color: #55595A">[em pedidos respondidos]</span>
-<p style="margin: 0; font-size: 17px; line-height: 1.55; color: #3D4142">[Nome do cliente] — [o problema, o que foi implantado e o resultado.]</p>
+<div class="step">
+<span class="step__dot step__dot--idle"></span>
+<span class="step__tag">ETAPA 02</span>
+<h3 class="step__title">Diagnóstico</h3>
+<p class="step__text">Você recebe um mapa do que automatizar primeiro, com custo, prazo e retorno esperado.</p>
 </div>
-<div style="background: #F1EDE5; padding: 36px; display: flex; flex-direction: column; gap: 20px">
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 1.5px; color: #55595A">CASE 03 · [SETOR]</span>
-<span style="font-family: 'Archivo', sans-serif; font-stretch: 125%; font-weight: 900; font-size: 64px; line-height: 1; color: var(--accent)">[24h]</span>
-<span style="font-size: 15px; color: #55595A">[de atendimento sem parar]</span>
-<p style="margin: 0; font-size: 17px; line-height: 1.55; color: #3D4142">[Nome do cliente] — [o problema, o que foi implantado e o resultado.]</p>
+<div class="step">
+<span class="step__dot step__dot--idle"></span>
+<span class="step__tag">ETAPA 03</span>
+<h3 class="step__title">Implantação</h3>
+<p class="step__text">Construímos, testamos com a sua equipe e só entregamos quando está rodando.</p>
 </div>
+<div class="step">
+<span class="step__dot step__dot--idle"></span>
+<span class="step__tag">ETAPA 04</span>
+<h3 class="step__title">Evolução</h3>
+<p class="step__text">Medimos horas economizadas e vendas a mais, e ajustamos mês a mês.</p>
 </div>
 </div>
 </section>
 
-<section aria-label="Quem somos" style="background: #E8E2D6; border-top: 1px solid #D6D0C4; border-bottom: 1px solid #D6D0C4">
-<div style="max-width: 1280px; margin: 0 auto; padding: 120px 24px; display: flex; flex-wrap: wrap; gap: 64px; align-items: center">
-<div style="flex: 0 1 360px; min-width: 0">
-<div style="aspect-ratio: 4 / 5; background: #DDD6C8; border: 1px solid #D6D0C4; display: flex; align-items: center; justify-content: center; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 1.5px; color: #55595A">[SUA FOTO]</div>
+<section id="resultados" class="results">
+<div class="container section stack">
+<div class="section-head">
+<p class="label">[05] Resultados</p>
+<h2 class="h2">Antes e depois, em números.</h2>
 </div>
-<div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
-<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: #55595A">[06] Quem está por trás</p>
-<h2 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 112%; font-weight: 800; font-size: clamp(32px, 4vw, 52px); line-height: 1.05; letter-spacing: -1px">Engenharia de ponta, com sotaque mineiro.</h2>
-<p style="margin: 0; font-size: 18px; line-height: 1.65; color: #3D4142">A Intelectia foi fundada por Jean Cecílio, estudante de Ciência da Computação e Engenharia Elétrica, com foco em inteligência artificial e segurança da informação. A missão: levar para as empresas do Vale do Aço as mesmas ferramentas que as grandes já usam — explicadas sem enrolação.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 10px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 1px; text-transform: uppercase">
-<span style="border: 1px solid #B9B2A4; padding: 10px 14px">Atendimento presencial</span>
-<span style="border: 1px solid #B9B2A4; padding: 10px 14px">Ciência da Computação</span>
-<span style="border: 1px solid #B9B2A4; padding: 10px 14px">Segurança da informação</span>
+<div class="cases">
+<div class="case">
+<span class="case__tag">CASE 01 · [SETOR]</span>
+<span class="case__num">[−00h]</span>
+<span class="case__unit">[por semana de trabalho manual]</span>
+<p class="case__text">[Nome do cliente] — [o problema, o que foi implantado e o resultado.]</p>
+</div>
+<div class="case">
+<span class="case__tag">CASE 02 · [SETOR]</span>
+<span class="case__num">[+00%]</span>
+<span class="case__unit">[em pedidos respondidos]</span>
+<p class="case__text">[Nome do cliente] — [o problema, o que foi implantado e o resultado.]</p>
+</div>
+<div class="case">
+<span class="case__tag">CASE 03 · [SETOR]</span>
+<span class="case__num">[24h]</span>
+<span class="case__unit">[de atendimento sem parar]</span>
+<p class="case__text">[Nome do cliente] — [o problema, o que foi implantado e o resultado.]</p>
 </div>
 </div>
 </div>
 </section>
 
-<section aria-label="Perguntas frequentes" style="max-width: 1280px; margin: 0 auto; padding: 120px 24px; display: flex; flex-wrap: wrap; gap: 56px">
-<div style="flex: 1 1 320px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
-<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: #55595A">[07] Perguntas</p>
-<h2 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 112%; font-weight: 800; font-size: clamp(36px, 5vw, 60px); line-height: 1; letter-spacing: -1px">Sem letra miúda.</h2>
+<section aria-label="Quem somos" class="about">
+<div class="container section about__inner">
+<div class="about__media">
+<div class="photo-placeholder">[SUA FOTO]</div>
 </div>
-<div style="flex: 2 1 560px; min-width: 0; display: flex; flex-direction: column; border-top: 1px solid #D6D0C4">
-<div style="padding: 28px 0; border-bottom: 1px solid #D6D0C4; display: flex; flex-direction: column; gap: 10px"><h3 style="margin: 0; font-size: 21px; font-weight: 600">Minha empresa é pequena. IA é pra mim?</h3><p style="margin: 0; font-size: 17px; line-height: 1.6; color: #3D4142">É onde ela mais faz diferença. Tirar uma pessoa do WhatsApp ou das planilhas já muda a rotina inteira do negócio.</p></div>
-<div style="padding: 28px 0; border-bottom: 1px solid #D6D0C4; display: flex; flex-direction: column; gap: 10px"><h3 style="margin: 0; font-size: 21px; font-weight: 600">Já tentei IA e não deu certo.</h3><p style="margin: 0; font-size: 17px; line-height: 1.6; color: #3D4142">Normalmente o erro é começar pela ferramenta. A gente começa pelo processo e só depois escolhe a tecnologia certa para ele.</p></div>
-<div style="padding: 28px 0; border-bottom: 1px solid #D6D0C4; display: flex; flex-direction: column; gap: 10px"><h3 style="margin: 0; font-size: 21px; font-weight: 600">Meus dados estão bagunçados.</h3><p style="margin: 0; font-size: 17px; line-height: 1.6; color: #3D4142">Faz parte do trabalho organizar. Muitas vezes esse já é o primeiro ganho que a empresa sente.</p></div>
-<div style="padding: 28px 0; border-bottom: 1px solid #D6D0C4; display: flex; flex-direction: column; gap: 10px"><h3 style="margin: 0; font-size: 21px; font-weight: 600">Quanto custa e em quanto tempo fica pronto?</h3><p style="margin: 0; font-size: 17px; line-height: 1.6; color: #3D4142">Depende do projeto. O diagnóstico é gratuito e você recebe valor e prazo antes de decidir. Um atendimento no WhatsApp costuma entrar no ar em poucas semanas.</p></div>
+<div class="about__text">
+<p class="label">[06] Quem está por trás</p>
+<h2 class="h2 h2--about">Engenharia de ponta, com sotaque mineiro.</h2>
+<p class="about__bio">A Intelectia foi fundada por Jean Cecílio, estudante de Ciência da Computação e Engenharia Elétrica, com foco em inteligência artificial e segurança da informação. A missão: levar para as empresas do Vale do Aço as mesmas ferramentas que as grandes já usam — explicadas sem enrolação.</p>
+<div class="tags">
+<span class="tag">Atendimento presencial</span>
+<span class="tag">Ciência da Computação</span>
+<span class="tag">Segurança da informação</span>
+</div>
+</div>
 </div>
 </section>
 
-<section id="contato" style="background: var(--accent); color: #111214">
-<div style="max-width: 1280px; margin: 0 auto; padding: 120px 24px; display: flex; flex-direction: column; gap: 40px">
-<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 2px; text-transform: uppercase">[08] Próximo passo</p>
-<h2 style="margin: 0; font-family: 'Archivo', sans-serif; font-stretch: 125%; font-weight: 900; font-size: clamp(44px, 7.5vw, 104px); line-height: 0.92; letter-spacing: -2px; text-transform: uppercase; max-width: 1100px">Bora colocar a IA para trabalhar?</h2>
-<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 32px">
-<a href="#contato" style="background: #F1EDE5; color: #111214; text-decoration: none; padding: 20px 32px; font-weight: 700; font-size: 18px">Agendar diagnóstico gratuito →</a>
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 15px">[SEU WHATSAPP] · [SEU E-MAIL] · @intelectia.consultoria</span>
+<section aria-label="Perguntas frequentes" class="container section faq">
+<div class="faq__head">
+<p class="label">[07] Perguntas</p>
+<h2 class="h2 h2--faq">Sem letra miúda.</h2>
+</div>
+<div class="faq__list">
+<div class="faq__item"><h3 class="faq__q">Minha empresa é pequena. IA é pra mim?</h3><p class="faq__a">É onde ela mais faz diferença. Tirar uma pessoa do WhatsApp ou das planilhas já muda a rotina inteira do negócio.</p></div>
+<div class="faq__item"><h3 class="faq__q">Já tentei IA e não deu certo.</h3><p class="faq__a">Normalmente o erro é começar pela ferramenta. A gente começa pelo processo e só depois escolhe a tecnologia certa para ele.</p></div>
+<div class="faq__item"><h3 class="faq__q">Meus dados estão bagunçados.</h3><p class="faq__a">Faz parte do trabalho organizar. Muitas vezes esse já é o primeiro ganho que a empresa sente.</p></div>
+<div class="faq__item"><h3 class="faq__q">Quanto custa e em quanto tempo fica pronto?</h3><p class="faq__a">Depende do projeto. O diagnóstico é gratuito e você recebe valor e prazo antes de decidir. Um atendimento no WhatsApp costuma entrar no ar em poucas semanas.</p></div>
+</div>
+</section>
+
+<section id="contato" class="cta">
+<div class="container section stack stack--40">
+<p class="label label--inherit">[08] Próximo passo</p>
+<h2 class="cta__title">Bora colocar a IA para trabalhar?</h2>
+<div class="cta__row">
+<a href="#contato" class="btn btn--light">Agendar diagnóstico gratuito →</a>
+<span class="cta__contacts">[SEU WHATSAPP] · [SEU E-MAIL] · @intelectia.consultoria</span>
 </div>
 </div>
 </section>
 
 <footer>
-<div style="max-width: 1280px; margin: 0 auto; padding: 28px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: #55595A">
+<div class="container site-footer__inner">
 <span>© 2026 Intelectia Consultoria · CNPJ [SEU CNPJ]</span>
 <span>João Monlevade · Vale do Aço · MG</span>
 </div>
