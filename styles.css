@@ -25,7 +25,8 @@ body { margin: 0; background: var(--cream); -webkit-font-smoothing: antialiased;
 img { max-width: 100%; }
 a { color: var(--accent-text); }
 a:hover { opacity: .85; }
-a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.cta a:focus-visible { outline-color: var(--ink); } /* laranja some sobre o fundo laranja */
 
 /* ---------- Base da página ---------- */
 .page { font-family: var(--font-body); color: var(--ink); background: var(--cream); width: 100%; overflow: hidden; }
@@ -62,6 +63,7 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
 .brand__logo { height: 40px; width: auto; display: block; }
 .site-nav { display: flex; flex-wrap: wrap; align-items: center; gap: 28px; font-family: var(--font-mono); font-size: 13px; letter-spacing: 1px; text-transform: uppercase; }
 .site-nav__link { color: var(--text-2); text-decoration: none; }
+.menu-toggle { display: none; }
 
 /* ---------- [01] Hero ---------- */
 .hero { position: relative; border-bottom: 1px solid var(--line); }
@@ -104,10 +106,21 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
 .service__text { margin: 0; flex: 1 1 360px; font-size: 18px; line-height: 1.55; color: var(--dark-text); }
 
 /* ---------- [04] Método ---------- */
-.steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); border-top: 1px solid var(--line); }
-.step { padding: 36px 28px; display: flex; flex-direction: column; gap: 16px; border-right: 1px solid var(--line); }
-.step:first-child { padding-left: 0; }
-.step:last-child { border-right: 0; }
+/* 1 coluna no celular, 2×2 no tablet, 4 no desktop. Cada etapa tem a própria linha de cima,
+   para o ponto (margin-top negativo) cair sempre sobre ela. */
+.steps { display: grid; grid-template-columns: 1fr; }
+.step { padding: 36px 0; display: flex; flex-direction: column; gap: 16px; border-top: 1px solid var(--line); }
+@media (min-width: 600px) {
+  .steps { grid-template-columns: repeat(2, 1fr); }
+  .step { padding: 36px 28px; }
+  .step:nth-child(odd) { padding-left: 0; border-right: 1px solid var(--line); }
+}
+@media (min-width: 1024px) {
+  .steps { grid-template-columns: repeat(4, 1fr); }
+  .step, .step:nth-child(odd) { padding: 36px 28px; border-right: 1px solid var(--line); }
+  .step:first-child { padding-left: 0; }
+  .step:last-child { border-right: 0; }
+}
 .step__dot { width: 14px; height: 14px; border-radius: 50%; margin-top: -43px; }
 .step__dot--active { background: var(--accent); }
 .step__dot--idle { border: 2px solid var(--ink); }
@@ -117,7 +130,9 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
 
 /* ---------- [05] Resultados ---------- */
 .results { border-top: 1px solid var(--line); }
-.cases { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+/* 3 colunas só quando o número grande cabe; antes disso, um card por linha (sem buraco no grid). */
+.cases { display: grid; grid-template-columns: 1fr; gap: 1px; background: var(--line); border: 1px solid var(--line); }
+@media (min-width: 1120px) { .cases { grid-template-columns: repeat(3, 1fr); } }
 .case { background: var(--cream); padding: 36px; display: flex; flex-direction: column; gap: 20px; }
 .case__tag { font-family: var(--font-mono); font-size: 12px; letter-spacing: 1.5px; color: var(--muted); }
 .case__num { font-family: var(--font-display); font-stretch: 125%; font-weight: 900; font-size: 64px; line-height: 1; color: var(--accent); }
@@ -150,3 +165,62 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
 
 /* ---------- Footer ---------- */
 .site-footer__inner { padding-top: 28px; padding-bottom: 28px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-family: var(--font-mono); font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); }
+
+/* ---------- Tablet: foto do fundador ao lado do texto ---------- */
+@media (min-width: 600px) and (max-width: 1023px) {
+  .about__inner { gap: 40px; }
+  .about__media { flex-basis: 240px; }
+  .about__text { flex-basis: 360px; }
+}
+
+/* ---------- Celular (até 767px) ---------- */
+@media (max-width: 767px) {
+  .section { padding-top: 72px; padding-bottom: 72px; }
+  .stack, .stack--64 { gap: 40px; }
+
+  /* Menu: logo + botão; a navegação abre embaixo, em lista */
+  .menu-toggle { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 14px; background: transparent; border: 1px solid var(--stone); border-radius: 0; color: var(--ink); font-family: var(--font-mono); font-size: 13px; letter-spacing: 1px; text-transform: uppercase; cursor: pointer; }
+  .menu-toggle__icon, .menu-toggle__icon::before, .menu-toggle__icon::after { display: block; width: 18px; height: 2px; background: currentColor; }
+  .menu-toggle__icon { position: relative; }
+  .menu-toggle__icon::before, .menu-toggle__icon::after { content: ""; position: absolute; left: 0; }
+  .menu-toggle__icon::before { top: -5px; }
+  .menu-toggle__icon::after { top: 5px; }
+  .menu-toggle[aria-expanded="true"] .menu-toggle__icon { background: transparent; }
+  .menu-toggle[aria-expanded="true"] .menu-toggle__icon::before { top: 0; transform: rotate(45deg); }
+  .menu-toggle[aria-expanded="true"] .menu-toggle__icon::after { top: 0; transform: rotate(-45deg); }
+  .site-nav { flex-basis: 100%; flex-direction: column; align-items: stretch; gap: 0; border-top: 1px solid var(--line); }
+  .js .site-nav:not(.is-open) { display: none; }
+  .site-nav__link { display: flex; align-items: center; min-height: 52px; border-bottom: 1px solid var(--line); }
+  .site-nav .btn--nav { justify-content: center; margin-top: 16px; }
+
+  /* Hero */
+  .hero__inner { padding-top: 56px; padding-bottom: 64px; gap: 40px; }
+  .hero__text { gap: 24px; }
+  .hero__title { font-size: clamp(40px, 8vw, 112px); letter-spacing: -1px; }
+  .hero__lead { font-size: 18px; }
+  .btn-row { flex-direction: column; }
+  .btn--primary, .btn--outline, .btn--light { display: block; text-align: center; }
+  .panel__head { gap: 12px; }
+
+  .sectors__inner { gap: 8px 16px; font-size: 13px; letter-spacing: 1px; }
+
+  .pain { gap: 8px 40px; padding: 24px 0; }
+  .pain__text { font-size: 19px; }
+
+  .service { padding: 28px 0; }
+  .service__title { font-size: 26px; }
+  .service__text { font-size: 17px; }
+
+  .case { padding: 28px; }
+  .case__num { font-size: 52px; }
+
+  .about__inner { gap: 40px; }
+  .about__media { flex-basis: 240px; }
+
+  .faq { gap: 40px; }
+  .faq__q { font-size: 19px; }
+
+  .cta__title { font-size: clamp(30px, 9.4vw, 57px); letter-spacing: -1px; }
+  .btn--light { padding: 20px 24px; font-size: 17px; }
+  .cta__row { align-items: stretch; flex-direction: column; }
+}

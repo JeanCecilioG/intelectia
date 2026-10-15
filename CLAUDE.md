@@ -8,6 +8,8 @@ Objetivo do site: gerar pedidos de **diagnóstico gratuito** (conversão princip
 - HTML + CSS estáticos, sem build. Abrir `index.html` no navegador já funciona.
 - Fontes: Google Fonts — Archivo (títulos, `font-stretch: 112–125%`, peso 800–900, caixa alta), IBM Plex Sans (texto), IBM Plex Mono (rótulos e números).
 - Estilos em `styles.css` (tokens de cor e fonte em `:root`, classes por seção). Não usar `style=""` inline no HTML.
+- `main.js`: só o necessário (hoje, o menu do celular). Sem JS, a navegação aparece aberta.
+- Responsivo: celular até 767px (menu recolhido), tablet 600–1023px (Método 2×2, foto ao lado do texto), desktop a partir de 1024px. Conferir em 360, 768 e 1440px.
 
 ## Identidade visual
 | Token | Cor | Uso |

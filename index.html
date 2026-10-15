@@ -13,6 +13,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js')</script>
+<script src="main.js" defer></script>
 </head>
 <body>
 <div class="page">
@@ -20,7 +22,8 @@
 <header class="site-header">
 <div class="container site-header__inner">
 <a href="#topo" class="brand"><img src="assets/logo-horizontal-claro.png" alt="Intelectia Consultoria" class="brand__logo"></a>
-<nav aria-label="Principal" class="site-nav">
+<button type="button" class="menu-toggle" aria-expanded="false" aria-controls="menu"><span class="menu-toggle__icon" aria-hidden="true"></span><span class="menu-toggle__text">Menu</span></button>
+<nav id="menu" aria-label="Principal" class="site-nav">
 <a href="#servicos" class="site-nav__link">Serviços</a>
 <a href="#metodo" class="site-nav__link">Método</a>
 <a href="#resultados" class="site-nav__link">Resultados</a>
