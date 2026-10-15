@@ -1,0 +1,13 @@
+:root {
+  --accent: #FF6A1A;      /* laranja do logo — fundos, pontos, títulos grandes */
+  --accent-text: #B5420A; /* laranja escuro — textos pequenos sobre creme */
+  --ink: #111214;         /* preto */
+  --cream: #F1EDE5;       /* fundo principal */
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--cream); -webkit-font-smoothing: antialiased; }
+img { max-width: 100%; }
+a { color: var(--accent-text); }
+a:hover { opacity: .85; }
+a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
