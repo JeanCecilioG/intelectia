@@ -24,7 +24,7 @@ Regras:
 - Texto sobre laranja é sempre `--ink` (nunca branco/creme — contraste insuficiente).
 - Laranja `#FF6A1A` só em texto grande (≥ 24px); texto pequeno usa `--accent-text`.
 - Seções numeradas com rótulo mono: `[01] Título`. Divisórias com linhas finas, sem sombras, sem gradientes, cantos retos.
-- Tom de voz: direto, mineiro, sem jargão. Frases curtas.
+- Tom de voz: direto, mineiro, frases curtas. Termos técnicos (agentes, LLM, RAG) podem aparecer, mas sempre explicados em português simples na mesma frase.
 - Não usar emoji no site.
 
 ## Estrutura da página (`index.html`)
@@ -32,7 +32,7 @@ Regras:
 2. [01] Hero — "IA forjada para a sua empresa." + painel de automações (exemplo ilustrativo)
 3. Faixa de setores atendidos
 4. [02] O problema — 4 dores numeradas
-5. [03] Serviços (seção escura) — S1 a S5
+5. [03] Serviços (seção escura) — S1 a S6
 6. [04] Método — 4 etapas
 7. [05] Resultados — 3 cards de cases (PLACEHOLDERS)
 8. [06] Quem está por trás — fundador
