@@ -47,7 +47,8 @@ Regras:
 - Os logos são PNG gerados por IA. Idealmente substituir por SVG vetorizado.
 
 ## Placeholders que precisam de dados reais (não inventar)
-- `[SEU E-MAIL]`, `[SEU CNPJ]` (aparecem também no JSON-LD do `<head>`)
+- `[SEU CNPJ]` (rodapé e JSON-LD do `<head>`)
+- E-mail definido: jeancecilio@icloud.com (CTA final e JSON-LD).
 - WhatsApp definido: (31) 97311-1135. Se mudar, trocar em 3 lugares: `WHATSAPP_NUMERO` no `main.js`, `telephone` no JSON-LD e o texto do `[data-whatsapp-number]` no CTA final (usado só sem JS).
 - `[SEU-DOMINIO]`: canonical, Open Graph, JSON-LD, `sitemap.xml` e `robots.txt`. Trocar tudo de uma vez quando o domínio estiver definido.
 - `[SUA FOTO]` na seção do fundador
