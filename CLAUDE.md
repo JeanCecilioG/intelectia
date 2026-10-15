@@ -47,7 +47,8 @@ Regras:
 - Os logos são PNG gerados por IA. Idealmente substituir por SVG vetorizado.
 
 ## Placeholders que precisam de dados reais (não inventar)
-- `[SEU WHATSAPP]`, `[SEU E-MAIL]`, `[SEU CNPJ]`
+- `[SEU WHATSAPP]`, `[SEU E-MAIL]`, `[SEU CNPJ]` (aparecem também no JSON-LD do `<head>`: o telefone ali é no formato `+55-31-9XXXX-XXXX`)
+- `[SEU-DOMINIO]`: canonical, Open Graph, JSON-LD, `sitemap.xml` e `robots.txt`. Trocar tudo de uma vez quando o domínio estiver definido.
 - `[SUA FOTO]` na seção do fundador
 - Os 3 cases em [05] Resultados (nome do cliente, setor, número, descrição). **Nunca inventar clientes ou números.** A seção está **escondida** pela classe `sem-resultados` no `<body>` (some a seção e o link do menu). Para reativar, apague essa classe.
 - A numeração `[01]`…`[08]` é gerada pelo CSS (`.secao-num`), então não pula número quando uma seção está escondida. Seção nova numerada = `<span class="secao-num"></span>` no rótulo.
