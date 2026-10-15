@@ -16,7 +16,9 @@
 <script>document.documentElement.classList.add('js')</script>
 <script src="main.js" defer></script>
 </head>
-<body>
+<!-- [05] Resultados está ESCONDIDA até haver cases reais.
+     Para reativar: apague a classe "sem-resultados" abaixo. A numeração [01]…[08] se ajusta sozinha. -->
+<body class="sem-resultados">
 <div class="page">
 
 <header class="site-header">
@@ -26,7 +28,7 @@
 <nav id="menu" aria-label="Principal" class="site-nav">
 <a href="#servicos" class="site-nav__link">Serviços</a>
 <a href="#metodo" class="site-nav__link">Método</a>
-<a href="#resultados" class="site-nav__link">Resultados</a>
+<a href="#resultados" class="site-nav__link nav-resultados">Resultados</a>
 <a href="#contato" class="btn btn--nav" data-whatsapp>Diagnóstico grátis →</a>
 </nav>
 </div>
@@ -45,7 +47,7 @@
 </svg>
 <div class="container hero__inner">
 <div class="hero__text">
-<p class="label">[01] Consultoria em inteligência artificial · Vale do Aço · MG</p>
+<p class="label"><span class="secao-num"></span> Consultoria em inteligência artificial · Vale do Aço · MG</p>
 <h1 class="hero__title">IA forjada para a <span class="hl">sua empresa.</span></h1>
 <p class="hero__lead">A gente entra na rotina do seu negócio, encontra o trabalho repetitivo e coloca a inteligência artificial para fazer. Atendimento, orçamentos, relatórios, dados — funcionando de verdade, não em apresentação.</p>
 <div class="btn-row">
@@ -83,7 +85,7 @@
 
 <section aria-label="O problema" class="container section stack">
 <div class="section-head">
-<p class="label">[02] O problema</p>
+<p class="label"><span class="secao-num"></span> O problema</p>
 <h2 class="h2 h2--wide">Ter o ChatGPT aberto no computador <span class="h2__dim">não é</span> ter IA na empresa.</h2>
 </div>
 <div class="rows">
@@ -98,7 +100,7 @@
 <div class="container section stack">
 <div class="services__head">
 <div class="section-head">
-<p class="label label--on-dark">[03] Serviços</p>
+<p class="label label--on-dark"><span class="secao-num"></span> Serviços</p>
 <h2 class="h2">O que colocamos para rodar.</h2>
 </div>
 <p class="services__intro">Cada projeto começa pelo problema do seu negócio — a ferramenta vem depois.</p>
@@ -115,7 +117,7 @@
 
 <section id="metodo" class="container section stack stack--64">
 <div class="section-head">
-<p class="label">[04] Método</p>
+<p class="label"><span class="secao-num"></span> Método</p>
 <h2 class="h2">Do primeiro café ao resultado medido.</h2>
 </div>
 <div class="steps">
@@ -149,7 +151,7 @@
 <section id="resultados" class="results">
 <div class="container section stack">
 <div class="section-head">
-<p class="label">[05] Resultados</p>
+<p class="label"><span class="secao-num"></span> Resultados</p>
 <h2 class="h2">Antes e depois, em números.</h2>
 </div>
 <div class="cases">
@@ -181,7 +183,7 @@
 <div class="photo-placeholder">[SUA FOTO]</div>
 </div>
 <div class="about__text">
-<p class="label">[06] Quem está por trás</p>
+<p class="label"><span class="secao-num"></span> Quem está por trás</p>
 <h2 class="h2 h2--about">Engenharia de ponta, com sotaque mineiro.</h2>
 <p class="about__bio">A Intelectia foi fundada por Jean Cecílio, estudante de Ciência da Computação e Engenharia Elétrica, com foco em inteligência artificial e segurança da informação. A missão: levar para as empresas do Vale do Aço as mesmas ferramentas que as grandes já usam — explicadas sem enrolação.</p>
 <div class="tags">
@@ -195,7 +197,7 @@
 
 <section aria-label="Perguntas frequentes" class="container section faq">
 <div class="faq__head">
-<p class="label">[07] Perguntas</p>
+<p class="label"><span class="secao-num"></span> Perguntas</p>
 <h2 class="h2 h2--faq">Sem letra miúda.</h2>
 </div>
 <div class="faq__list">
@@ -208,7 +210,7 @@
 
 <section id="contato" class="cta">
 <div class="container section stack stack--40">
-<p class="label label--inherit">[08] Próximo passo</p>
+<p class="label label--inherit"><span class="secao-num"></span> Próximo passo</p>
 <h2 class="cta__title">Bora colocar a IA para trabalhar?</h2>
 <div class="cta__row">
 <a href="#contato" class="btn btn--light" data-whatsapp>Agendar diagnóstico gratuito →</a>

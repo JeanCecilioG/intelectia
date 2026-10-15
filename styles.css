@@ -37,6 +37,13 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outlin
 .stack--64 { gap: 64px; }
 .hl { color: var(--accent); }
 
+/* Numeração das seções: [01], [02]… gerada pelo CSS, para não pular número quando uma seção está escondida */
+.page { counter-reset: secao; }
+.secao-num::before { counter-increment: secao; content: "[" counter(secao, decimal-leading-zero) "]"; }
+
+/* Interruptor da seção [05] Resultados: classe "sem-resultados" no <body> esconde a seção e o link do menu */
+.sem-resultados #resultados, .sem-resultados .nav-resultados { display: none; }
+
 /* ---------- Tipografia ---------- */
 .label { margin: 0; font-family: var(--font-mono); font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); }
 .label--on-dark { color: var(--dark-muted); }

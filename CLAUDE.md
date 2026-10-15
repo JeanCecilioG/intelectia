@@ -49,7 +49,8 @@ Regras:
 ## Placeholders que precisam de dados reais (não inventar)
 - `[SEU WHATSAPP]`, `[SEU E-MAIL]`, `[SEU CNPJ]`
 - `[SUA FOTO]` na seção do fundador
-- Os 3 cases em [05] Resultados (nome do cliente, setor, número, descrição). **Nunca inventar clientes ou números.** Enquanto não houver cases reais, esconder a seção.
+- Os 3 cases em [05] Resultados (nome do cliente, setor, número, descrição). **Nunca inventar clientes ou números.** A seção está **escondida** pela classe `sem-resultados` no `<body>` (some a seção e o link do menu). Para reativar, apague essa classe.
+- A numeração `[01]`…`[08]` é gerada pelo CSS (`.secao-num`), então não pula número quando uma seção está escondida. Seção nova numerada = `<span class="secao-num"></span>` no rótulo.
 - WhatsApp: o número fica **só** em `WHATSAPP_NUMERO`, no topo do `main.js` (formato `5531912345678`). Os botões marcados com `data-whatsapp` viram `https://wa.me/<número>?text=Olá! Quero meu diagnóstico gratuito`; enquanto a constante estiver vazia, eles levam para `#contato`.
 
 ## Backlog
