@@ -47,7 +47,7 @@ Regras:
 - Os logos são PNG gerados por IA. Idealmente substituir por SVG vetorizado.
 
 ## Placeholders que precisam de dados reais (não inventar)
-- `[SEU CNPJ]` (rodapé e JSON-LD do `<head>`)
+- CNPJ: ainda não existe e foi **tirado** do site. Quando houver, voltar com `· CNPJ 00.000.000/0000-00` no rodapé e `"taxID"` no JSON-LD.
 - E-mail definido: jeancecilio@icloud.com (CTA final e JSON-LD).
 - WhatsApp definido: (31) 97311-1135. Se mudar, trocar em 3 lugares: `WHATSAPP_NUMERO` no `main.js`, `telephone` no JSON-LD e o texto do `[data-whatsapp-number]` no CTA final (usado só sem JS).
 - `[SEU-DOMINIO]`: canonical, Open Graph, JSON-LD, `sitemap.xml` e `robots.txt`. Trocar tudo de uma vez quando o domínio estiver definido.
