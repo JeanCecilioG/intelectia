@@ -61,3 +61,27 @@ var WHATSAPP_MENSAGEM = 'Olá! Quero meu diagnóstico gratuito';
     }
   });
 })();
+
+// Botão flutuante: aparece no celular só quando nenhum outro botão de WhatsApp está à vista.
+(function () {
+  var flutuante = document.querySelector('.wa-float');
+  var menu = document.getElementById('menu');
+  if (!flutuante || !('IntersectionObserver' in window)) return;
+  var alvos = [document.querySelector('.hero .btn--primary'), document.getElementById('contato'), document.querySelector('footer')].filter(Boolean);
+  var visiveis = new Set();
+
+  function atualizar() {
+    var menuAberto = menu && menu.classList.contains('is-open');
+    flutuante.classList.toggle('is-hidden', visiveis.size > 0 || menuAberto);
+  }
+
+  var observador = new IntersectionObserver(function (entradas) {
+    entradas.forEach(function (e) {
+      if (e.isIntersecting) visiveis.add(e.target); else visiveis.delete(e.target);
+    });
+    atualizar();
+  });
+  alvos.forEach(function (alvo) { observador.observe(alvo); });
+
+  if (menu) new MutationObserver(atualizar).observe(menu, { attributes: true, attributeFilter: ['class'] });
+})();

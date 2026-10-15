@@ -167,6 +167,17 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outlin
 /* ---------- Footer ---------- */
 .site-footer__inner { padding-top: 28px; padding-bottom: 28px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-family: var(--font-mono); font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: var(--muted); }
 
+/* ---------- Botão flutuante de WhatsApp (só no celular) ---------- */
+.wa-float { display: none; }
+@media (max-width: 767px) {
+  .wa-float { position: fixed; z-index: 50; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom)); display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 0 18px; background: var(--accent); color: var(--ink); border: 1px solid var(--ink); font-family: var(--font-mono); font-size: 14px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; text-decoration: none; transition: opacity .2s, transform .2s, visibility .2s; }
+  .wa-float__icon { width: 20px; height: 20px; }
+  .wa-float:focus-visible { outline-color: var(--ink); }
+  /* Some enquanto outro botão de WhatsApp já está na tela (hero, CTA final, menu aberto) */
+  .js .wa-float.is-hidden { opacity: 0; visibility: hidden; transform: translateY(8px); }
+}
+@media (prefers-reduced-motion: reduce) { .wa-float { transition: none; } }
+
 /* ---------- Tablet: foto do fundador ao lado do texto ---------- */
 @media (min-width: 600px) and (max-width: 1023px) {
   .about__inner { gap: 40px; }
