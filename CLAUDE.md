@@ -51,7 +51,7 @@ Regras:
 - E-mail definido: jeancecilio@icloud.com (CTA final e JSON-LD).
 - WhatsApp definido: (31) 97311-1135. Se mudar, trocar em 3 lugares: `WHATSAPP_NUMERO` no `main.js`, `telephone` no JSON-LD e o texto do `[data-whatsapp-number]` no CTA final (usado só sem JS).
 - `[SEU-DOMINIO]`: canonical, Open Graph, JSON-LD, `sitemap.xml` e `robots.txt`. Trocar tudo de uma vez quando o domínio estiver definido.
-- `[SUA FOTO]` na seção do fundador
+- Foto do fundador: `assets/jean-cecilio.jpg` (recorte 4:5, 720×900, sem EXIF, da foto do portfólio).
 - Os 3 cases em [05] Resultados (nome do cliente, setor, número, descrição). **Nunca inventar clientes ou números.** A seção está **escondida** pela classe `sem-resultados` no `<body>` (some a seção e o link do menu). Para reativar, apague essa classe.
 - A numeração `[01]`…`[08]` é gerada pelo CSS (`.secao-num`), então não pula número quando uma seção está escondida. Seção nova numerada = `<span class="secao-num"></span>` no rótulo.
 - WhatsApp: o número fica **só** em `WHATSAPP_NUMERO`, no topo do `main.js` (formato `5531912345678`). Os botões marcados com `data-whatsapp` viram `https://wa.me/<número>?text=Olá! Quero meu diagnóstico gratuito`; enquanto a constante estiver vazia, eles levam para `#contato`.
