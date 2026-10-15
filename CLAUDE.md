@@ -31,7 +31,7 @@ Regras:
 1. Header — logo + navegação + botão "Diagnóstico grátis"
 2. [01] Hero — "IA forjada para a sua empresa." + painel de automações (exemplo ilustrativo)
 3. Faixa de setores atendidos
-4. [02] O problema — 4 dores numeradas
+4. [02] IA de verdade — 5 pontos técnicos do que dá para construir (abaixo de "Ter o ChatGPT aberto…")
 5. [03] Serviços (seção escura) — S1 a S6
 6. [04] Método — 4 etapas
 7. [05] Resultados — 3 cards de cases (PLACEHOLDERS)
